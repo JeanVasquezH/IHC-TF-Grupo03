@@ -1,0 +1,418 @@
+/*General*/
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+/*centrar y arial para las letras*/
+body{
+    text-align: center;
+    font-family: arial;
+}
+
+/*redes sociales*/
+.RedesSociales{
+    display: flex;
+    margin-left: 10px;
+    img{
+        width: 30px;
+        height: 30px;
+    }
+}
+
+/*Letras superiores como "INICIO" */
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 63px;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar{
+    display: flex;
+    margin-right: 10px;
+}
+
+/*Ajustar el logo*/
+.logo{
+    margin-left:50px;
+    margin-top: 150px;
+    img{
+        width: 180px;
+    }
+}
+
+.logo a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.navbar a{
+    display: block;
+    padding: 23px 20px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size:20px;
+}
+
+.navbar a:hover {
+    background: #3f3f3f;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Imagen de fondo */
+.header{
+    height: 100vh !important;
+    background: url('../Imagenes/FondoDePagina.png') no-repeat center;
+    background-size: cover;
+    
+}
+
+/*titulos xd*/
+.title{
+    margin-bottom: 40px;
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+}
+.title2{
+    margin-bottom: 40px;
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+}
+/**/
+
+p{
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: white;
+    padding: 0 50px;
+}
+
+/*botones*/
+.btn{
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 40px;
+    border: 2px solid #FF4B4B;
+    color: white;
+    text-decoration: none;
+    background: #FF4B4B ;
+}
+
+.box .btn{
+    width: 5%;
+}
+
+/*Boton precio*/
+.btnPrice{
+    width: 20%;
+    margin: auto;
+}
+
+.btn:hover {
+    background: none;
+
+}
+
+.btn-home {
+    display: flex;
+}
+
+.btn-home a{
+    margin: 0 10px;
+}
+
+.Apple, .Android{
+    background: transparent;
+    border: none;
+
+}
+
+
+
+/**/
+.content {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+/*El cuadro de texto a escribir*/
+.box-container{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 .3rem 5rem rgb(0,0, .5);
+    margin: 2rem;
+    flex-direction: column;
+}
+
+.box-container .box{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 90%;
+
+    text-align: center;
+    align-items: center;
+    
+}
+
+/*Para los precios que deberian ser 2*/
+
+.box-container .box i{
+
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 50%;
+    color: white;
+    background: 2rem;
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.box-container .box h3{
+    font-weight: bolder;
+    font-size: 50px;
+    color: black
+}
+
+.box-container .box p{
+    padding: 0 15px;
+    font-size: 16px;
+}
+
+/*APARTADO NOSOTROS */
+.about{
+    background: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.NosotrosBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    background: #FF4B4B;
+    width: 25%;
+    height: 20pc;
+    border-radius: 10px;
+    
+    text-align:center;
+}
+
+
+/*APARTADO PRECIO */
+.price{
+    background: url('../Imagenes/FondoDePagina.png') no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    height: 100vh;
+
+}
+
+/*Fondo 2*/
+.contain{
+    /*background: rgba(255, 255, 255, 0.302);*/
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.contact{
+    /*siempre se pone xd*/
+    display: flex;
+    flex-direction:row ;
+    /**/
+    justify-content: space-around;
+    padding-top: 20px;
+    background: black;
+    padding-bottom: 0;
+
+    .boxcontactos{
+        height: 60%;
+        border: 1px solid white;
+        border-radius: 30px;
+        display: flex;
+        flex-direction:column ;
+        justify-content: space-evenly;
+        width: 25%;
+        align-items: center;
+
+        div{
+            display: flex;
+            flex-direction:column ; 
+            width: 50%;
+        }
+        
+    }
+}
+.LearnMore,.Contactos, .SocialMedia{
+    color: white;
+    text-align: center;
+
+    h2{
+        font-size: 50px; 
+    }
+    a{
+        color: white;
+        text-decoration: none;
+        font-size: 20px; 
+        
+    }
+}
+
+
+/*caja de botones precio uwu*/
+.BoxbtnPrice{
+    display: flex;
+    justify-content: space-around;
+}
+
+/*caja de los planes*/
+.PlanesBox{
+    background: #b3b3b3;
+    width: 15%;
+    height: 50pc;
+    border-radius: 20px;
+
+    /*referencia a la imagen*/
+    img{
+        margin-top: 20px;
+    }
+}
+
+/*letras del pbasico */
+.PBasico p:nth-child(5){
+    color: #FF4B4B;
+}
+
+/*INICIO LETRITAS*/
+.InfoCTN{
+    background: #3f3f3f60;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2%;
+
+}
+
+.txt{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+    width: 30%;
+    p{
+        text-align: left;
+        
+    }
+    h2{
+        text-align: left;
+        font-size:50px ;
+        color: white;
+        font-weight: bolder;
+        margin-left: 50px;
+    }
+}
+
+/*Apartado de carateristicas*/
+.sau {
+    padding: 40px;
+    background: #FF4B4B;
+    height: 110vh;
+    display: grid;
+    grid-column: auto;
+    
+    grid-template-areas: 
+    "img1 text1"
+    "text2 img2";
+    
+
+}
+.img1{
+    grid-area: img1;
+    
+    
+}
+.img2{
+    grid-area: img2;
+}
+.text1{
+    grid-area: text1;
+    
+}
+.text2{
+    grid-area: text2;
+}
+
+.box1{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*centrar cajas*/
+    align-items: center;
+    div{
+        background: black;
+        border-radius: 30px;
+        padding: 3%;
+        width: 50%
+    }
+}
+/**/
+
+.PlanesBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    div{
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+/*Sección Pie de Página - Footer*/
+footer{
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    
+    text-align: center;
+}
