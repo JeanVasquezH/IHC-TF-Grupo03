@@ -10,9 +10,10 @@
 <body>
     <!--Imagen principal del producto-->
     <section class="main">
-        <figure class="main_figure">
-            <img src="Imagenes/MaxSecurityLogo.png" alt="" class="main_img">
-        </figure>
+        <div class="upper-section">
+            <img src="Imagenes/MaxSecurityLogo.png" alt="Logo" class="logo">
+            <p class="tagline">Todos y todas podemos reducir el riesgo de desastre ¡Hazte parte!</p>
+        </div>
 
         <!--login completo-->
         <div class="login-container">
@@ -30,23 +31,38 @@
                     <label for="password">Contraseña</label>
                     <input type="password" id="password" name="password" required>
                 </div>
-                <button type="submit">Entrar</button>
+                
+                <div class="forgot-password">
+                    <a href="#">¿Olvidaste tu contraseña?</a>
+                </div>
+
             </form>
             
             <!--botones de facebook, outlook y google-->
-            <article class = "SocialMedia">
-                <a href="https://www.facebook.com/" target="_blank" class="main_link">
-                    <img src="Imagenes/FacebookLogo.png" alt="" class="main_icon">
-                </a>
-
+            <div class="social-login">
+                <p>Inicio de sesión rápido</p>
                 <a href="https://www.google.com/intl/es-419/gmail/about/" target="_blank" class="main_link">
-                    <img src="Imagenes/gmailA.jpg" alt="" class="main_icon">
+                    <img src="Imagenes/gmailA.jpg" alt="Gmail" class="main_icon">
                 </a>
-
                 <a href="https://outlook.live.com/" target="_blank" class="main_link">
-                    <img src="Imagenes/outlook.jpg" alt="" class="main_icon">
+                    <img src="Imagenes/outlook.jpg" alt="Outlook" class="main_icon">
                 </a>
-            </article>
+                <a href="https://www.facebook.com/" target="_blank" class="main_link">
+                    <img src="Imagenes/FacebookLogo.png" alt="Facebook" class="main_icon">
+                </a>
+            </div>
+
+            <!--boton de login-->
+            <div class="button">
+                <a href="#" >Entrar</a>
+            </div>
+            
+
+            <div class="more-info">
+                <a href="#"><img src="" alt="" class="help-icon"> Para más información</a>
+            </div>
+
+
         </div>
     </section>  
 </body>
