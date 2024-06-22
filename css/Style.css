@@ -7,6 +7,10 @@
     vertical-align: baseline;
 }
 
+.tab-content a:hover{
+    background-color: white;
+}
+
 /*centrar y arial para las letras*/
 body{
     text-align: center;
@@ -22,6 +26,141 @@ body{
         height: 30px;
     }
 }
+
+.ContainerReviews{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 0;
+    p{
+        margin-bottom: 20px;
+        font-size: 18px;
+        color: white;
+        padding: 0 50px;
+    }
+}
+.active::after{
+    content: ' ';
+    position: absolute;
+    width: 80px;
+    height: 2px;
+    margin-left: -3%;
+    background-color: red;
+}
+/*nuevo*/
+.container{
+  max-width: 70%;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem;
+  p{
+    color: black;
+  }
+}
+
+.tabs {
+    background: #9b9b9b;
+    padding-top: 1rem;
+    border-bottom: 3px solid #3d3d3d;
+    border-right: none;
+  }
+
+
+.tabs .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.tabs p {
+    font-size: 1.2rem;
+    padding-top: 0.5rem;
+}
+  
+.tabs .container > div {
+    padding: 1.5rem 0;
+}
+  
+.tabs .container > div:hover {
+    color: #fff;
+    cursor: pointer;
+}
+.tab-border {
+    border-bottom: var(--primary-color) 4px solid;
+}
+
+  
+  /* Tab Content */
+  
+.tab-content {
+    
+    height: 35pc ;
+    padding: 3rem 0;
+    background: #f5f5f5;
+    color: #000;
+
+    h3{
+        font-size: 22px;
+        text-align: left;
+        margin-left: 50px;
+        margin-bottom: 20px;
+    }
+
+    p{
+        text-align: left;
+    }
+}
+  
+/* Hide content initially */
+#tab-1-content,
+#tab-2-content,
+#tab-3-content,
+#tab-4-content {
+    display: none;
+}
+
+.show {
+    display: block !important;
+}
+
+/*el contenido de cada pestaña*/
+#tab-1-content .tab-1-content-inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+  
+#tab-2-content .tab-2-content-inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+  
+#tab-3-content .tab-3-content-inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+  
+#tab-4-content .tab-4-content-inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*nuevo*/
 
 /*Letras superiores como "INICIO" */
 .head{
@@ -67,19 +206,16 @@ body{
 .navbar a:hover {
     background: #3f3f3f;
 }
-
+/*Imagen de fondo */
 .header{
     display: flex;
     justify-content: center;
     align-items: center;
-}
+    position: relative;
 
-/*Imagen de fondo */
-.header{
-    height: 100vh !important;
+    height: 120vh !important;
     background: url('../Imagenes/FondoDePagina.png') no-repeat center;
     background-size: cover;
-    
 }
 
 /*titulos xd*/
@@ -415,3 +551,63 @@ footer{
     padding: 20px;
     text-align: center;
 }
+
+.mapita{
+    height: 50pc ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #FF4B4B;
+    h2{
+        font-size: 50px;
+
+    }
+}
+
+@media (max-width: 960px) {
+    .showcase {
+      height: 70vh;
+    }
+  
+    .hide-sm {
+      display: none;
+    }
+  
+    .showcase-top img {
+      top: 30%;
+      left: 5%;
+      transform: translate(0);
+    }
+  
+    .showcase-content h1 {
+      font-size: 3.7rem;
+      line-height: 1;
+    }
+  
+    .showcase-content p {
+      font-size: 1.5rem;
+    }
+  
+    .footer .footer-cols {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .btn-xl {
+      font-size: 1.5rem;
+      padding: 1.4rem 2rem;
+    }
+  
+    .text-xl {
+      font-size: 1.5rem;
+    }
+  
+    .text-lg {
+      font-size: 1.3rem;
+    }
+  
+    .text-md {
+      font-size: 1rem;
+    }
+  }
+  
