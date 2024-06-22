@@ -1,5 +1,7 @@
 const Nosotros = document.querySelector("#QuienesSomos");
 const services = document.querySelector("#Servicios");
+const price = document.querySelector("#Recaudaciones");
+const principal = document.querySelector("#Inicio");
 
 const tabItems = document.querySelectorAll('.tab-item');
 const tabContentItems = document.querySelectorAll('.tab-content-item');
@@ -36,6 +38,18 @@ Nosotros.addEventListener("click", (p) => {
 services.addEventListener("click", (s) => {
     s.preventDefault();
     const sectionS = document.querySelector(".tabs");
+    sectionS.scrollIntoView({behavior: "smooth"});
+})
+/*menu price*/
+price.addEventListener("click", (s) => {
+    s.preventDefault();
+    const sectionS = document.querySelector(".price");
+    sectionS.scrollIntoView({behavior: "smooth"});
+})
+/*menu inicio*/
+principal.addEventListener("click", (s) => {
+    s.preventDefault();
+    const sectionS = document.querySelector(".header");
     sectionS.scrollIntoView({behavior: "smooth"});
 })
 
