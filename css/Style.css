@@ -69,7 +69,7 @@ body{
 
 .tabs .container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     grid-gap: 2rem;
     align-items: center;
     justify-content: center;
@@ -118,8 +118,16 @@ body{
 #tab-1-content,
 #tab-2-content,
 #tab-3-content,
-#tab-4-content {
+#tab-4-content,
+#tab-5-content {
     display: none;
+}
+
+.tab-5-content-inner{
+    img{
+        display: flex;
+        width: 15pc;
+    }
 }
 
 .show {
@@ -152,6 +160,13 @@ body{
 }
   
 #tab-4-content .tab-4-content-inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+#tab-5-content .tab-5-content-inner {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
